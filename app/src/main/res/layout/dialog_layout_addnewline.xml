@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <EditText
+        android:id="@+id/et_addNewLine_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="新路线名"
+        android:digits="0123456789"
+        android:lines="1"
+        android:maxLength="11"
+        android:inputType="number"
+        android:layout_marginBottom="15dp" />
+
+    <Spinner
+        android:id="@+id/sp_admin_addNewLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-5dp"
+        android:layout_marginEnd="-15dp"
+        android:layout_marginBottom="15dp" />
+
+</LinearLayout>

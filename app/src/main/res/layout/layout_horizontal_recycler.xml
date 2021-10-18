@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp">
+
+    <TextView
+        android:id="@+id/tv_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/bus_shape"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="758"
+        android:textSize="20sp"
+        android:textColor="#000000">
+
+    </TextView>
+
+</LinearLayout>

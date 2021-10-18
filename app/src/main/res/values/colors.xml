@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="googleBlue">#2d85f0</color>
+    <color name="googleBlueDeep">#0066FF</color>
+    <color name="googleRed">#f4433c</color>
+    <color name="googleRedDeep">#D33C3C</color>
+    <color name="googleYellow">#ffbc32</color>
+    <color name="googleGreen">#0aa858</color>
+    <color name="appBlack">#000000</color>
+    <color name="appWhite">#FFFFFF</color>
+    <color name="windowBackground">#EEEEEE</color>
+</resources>

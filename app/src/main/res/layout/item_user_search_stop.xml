@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/shadow_shape"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_user_search_stop_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:textColor="@color/appBlack"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bottom_stroke">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+            <TextView
+                android:id="@+id/tv_user_search_stop_start"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="17sp"
+                android:textColor="@color/appBlack"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="5dp"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_user_search_stop_to"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="开往"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+            <TextView
+                android:id="@+id/tv_user_search_stop_end"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="17sp"
+                android:textColor="@color/appBlack"
+                android:layout_alignParentStart="true"
+                android:paddingStart="5dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

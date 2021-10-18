@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bus Line</string>
+    <string name="home_home">主页</string>
+    <string name="home_line">路线</string>
+    <string name="home_user">我的</string>
+    <string name="admin_login"><u>管理员登录</u></string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_admin_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <EditText
+        android:id="@+id/register_et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789"
+        android:lines="1"
+        android:maxLength="11"
+        android:inputType="number"
+        android:hint="用户名"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/register_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="密码"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp" />
+
+
+</LinearLayout>

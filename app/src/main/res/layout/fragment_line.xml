@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        android:background="@drawable/shadow_shape"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="路线"
+                android:paddingLeft="80dp"
+                android:textSize="23sp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="查路线"
+                android:gravity="center_vertical"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/textview_line_spot"
+                    android:drawableLeft="@drawable/green_point"
+                    android:drawablePadding="20dp"
+                    android:text="我的位置"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/appBlack"
+                    android:paddingLeft="20dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/textview_line_spot"
+                    android:drawableLeft="@drawable/red_point"
+                    android:drawablePadding="20dp"
+                    android:layout_marginTop="30dp"
+                    android:hint="输入终点"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/appBlack"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/exchange" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

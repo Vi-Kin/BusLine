@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/user_fragment_profile"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/profile_background">
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/tv_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="未登录"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_shape"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_user_fragment_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_line_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:paddingLeft="30dp" />
+
+                <TextView
+                    android:id="@+id/tv_line_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="top"
+                    android:text="点击选择城市"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:paddingLeft="30dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/chevron_right">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:drawableEnd="@drawable/chevron_right"
+            android:gravity="center_vertical"
+            android:text="设置"
+            android:paddingLeft="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:drawableEnd="@drawable/chevron_right"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="应用评分"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:drawableEnd="@drawable/chevron_right"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="关于我们"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_shape_red">
+
+        <Button
+            android:id="@+id/btn_user_logout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="退出登录"
+            android:textColor="@color/appWhite"
+            android:textSize="20sp"
+            android:background="@color/googleRed" />
+    </LinearLayout>
+
+
+</LinearLayout>

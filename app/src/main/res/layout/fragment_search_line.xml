@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/appWhite">
+
+        <TextView
+            android:id="@+id/tv_user_search_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:textColor="@color/appBlack"/>
+
+        <TextView
+            android:id="@+id/tv_user_search_line_change"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/exchange_hor"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="10dp"
+            android:drawablePadding="-5dp"
+            android:paddingBottom="5dp"
+            android:text="换向"
+            android:textColor="@color/appBlack"
+            android:textSize="15sp"
+            android:gravity="center" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bottom_stroke">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+            <TextView
+                android:id="@+id/tv_user_search_start"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="17sp"
+                android:textColor="@color/appBlack"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="5dp"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_user_search_to"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="开往"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+            <TextView
+                android:id="@+id/tv_user_search_end"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="17sp"
+                android:textColor="@color/appBlack"
+                android:layout_alignParentStart="true"
+                android:paddingStart="5dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_user_search_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_user_search_admin"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/top_stroke"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <Button
+                android:id="@+id/search_line_add_stop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="20dp"
+                android:text="增加站点"
+                android:textColor="@color/appWhite"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/search_line_delete_stop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:text="删除站点"
+                android:textColor="@color/appWhite"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <Button
+                android:id="@+id/search_line_change_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="20dp"
+                android:text="更改线路名称"
+                android:textColor="@color/appWhite"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/search_line_delete_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:text="删除该线路"
+                android:textColor="@color/appWhite"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

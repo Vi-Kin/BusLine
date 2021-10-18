@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:padding="10dp"
+        android:background="@drawable/bottom_stroke">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_admin_main"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/home_search"
+                android:drawablePadding="5dp"
+                android:background="@drawable/search_selector"
+                android:text="查公交，搜路线"
+                android:textSize="18sp"
+                android:textColor="@color/appBlack"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <Button
+            android:id="@+id/btn_addNewStop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_marginBottom="40dp"
+            android:text="添加新站点"
+            android:textSize="30sp"
+            android:textColor="@color/appWhite"
+            android:background="@drawable/button_selector" />
+
+        <Button
+            android:id="@+id/btn_addNewLine"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="4"
+            android:background="@drawable/button_selector"
+            android:text="添加新线路"
+            android:textColor="@color/appWhite"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_admin_logout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="退出登录"
+            android:textSize="25sp"
+            android:textColor="@color/appWhite"
+            android:background="@drawable/button_selector_red" />
+    </LinearLayout>
+</LinearLayout>
